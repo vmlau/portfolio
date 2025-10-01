@@ -1,10 +1,13 @@
 body {
   /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
+     and use the OS’s UI font as the website font
+   */
   font: 100%/1.5 system-ui;
-  img {
-  max-width: 50%; /* Image will take 100% of its parent container's width */
-  height: auto; /* Height will adjust automatically to maintain aspect ratio */
-    }
+}
+
+/* Make images responsive so they scale to the container */
+img {
+  max-width: 50%;
+  height: auto;
+  display: block; /* avoids descender gaps when centering */
 }
