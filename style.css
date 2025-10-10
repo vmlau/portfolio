@@ -11,28 +11,8 @@ body {
   padding: 1.25rem; /* gives breathing room on small viewports */
 }
 
-/* Include border-box so padding is included in the element's width */
-html {
-  box-sizing: border-box;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-/* Make images responsive so they scale to the container */
 img {
   max-width: 50%;
   height: auto;
   display: block; /* avoids descender gaps when centering */
-}
-
-/* Center primary text and navigation */
-h1, h2, h3, p, nav {
-  text-align: center;
-}
-
-/* Center images horizontally within container */
-img {
-  margin-left: auto;
-  margin-right: auto;
 }
