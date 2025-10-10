@@ -32,6 +32,7 @@ nav a {
 
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom-color: #9aa0a6; /* fallback for older browsers */
   padding-bottom: 0.25em;
   font-weight: 600;
 }
