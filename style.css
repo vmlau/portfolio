@@ -42,7 +42,11 @@ nav a:hover {
   font-weight: 600;
 }
 
+/* Form layout: use CSS Grid to align labels and controls */
+form {
+  display: grid;
+}
+
 input, textarea, button {
   font: inherit;
-  display: grid;
 }
