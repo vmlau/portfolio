@@ -37,7 +37,7 @@ nav a.current {
   font-weight: 600;
 }
 
-nav a:hover {
+nav a.hover {
   background: oklch(90% 0.1 250);
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.25em;
