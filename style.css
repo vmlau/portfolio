@@ -28,6 +28,6 @@ nav a {
 
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: 0.25em; /* reduce bottom padding so border doesn't increase height */
+  padding-bottom: 0.25em; 
   font-weight: 600;
 }
