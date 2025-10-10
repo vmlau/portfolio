@@ -45,7 +45,9 @@ nav a:hover {
 /* Form layout: use CSS Grid to align labels and controls */
 form {
   display: grid;
-  grid-template-columns: auto 1fr
+  grid-template-columns: auto 1fr;
+  grid-column: 1 / -1;
+  gap: 1em;
 }
 
 input, textarea, button {
