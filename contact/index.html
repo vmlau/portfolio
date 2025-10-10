@@ -16,18 +16,15 @@
         <a href="../resume/index.html">Resume</a>
     </nav>
     <form action="mailto:vml.canada.2018@gmail.com" method="post" enctype="text/plain">
-        <label>
-            email:
-            <input type="email" name="email">
-        </label>
-        <label>
-            subject:
-            <input type="text" name="subject">
-        </label>
-        <label>
-            body:
-            <textarea name="body" rows="6"></textarea>
-        </label>
+        <label for="email">email:</label>
+        <input id="email" type="email" name="email">
+
+        <label for="subject">subject:</label>
+        <input id="subject" type="text" name="subject">
+
+        <label for="body">body:</label>
+        <textarea id="body" name="body" rows="6"></textarea>
+
         <button type="submit">Send</button>
     </form>
 </body>
