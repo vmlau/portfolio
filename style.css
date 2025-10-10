@@ -42,3 +42,7 @@ nav a:hover {
   padding-bottom: 0.25em;
   font-weight: 600;
 }
+
+input, textarea, button {
+  font: inherit;
+}
