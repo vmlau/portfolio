@@ -1,6 +1,14 @@
 html {
-  --color-accent: oklch(66.567% 0.14394 252.337);
+  /* fallback (hex) for wider browser support */
+  --color-accent: #6b46c1; /* pick a color you like */
   accent-color: var(--color-accent);
+}
+
+/* if the browser supports OKLCH, prefer that value */
+@supports (color: oklch(60% 0.1 200)) {
+  html {
+    --color-accent: oklch(66.567% 0.14394 252.337);
+  }
 }
 
 body {
@@ -36,9 +44,7 @@ nav a.current {
   font-weight: 600;
 }
 
-/* use the :hover pseudo-class so the style applies on mouse hover */
 nav a:hover {
-  /* subtle background tint using the accent color if supported */
   background: oklch(90% 0.05 252.3);
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.25em;
