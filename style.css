@@ -52,3 +52,8 @@ form {
 input, textarea, button {
   font: inherit;
 }
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+}
