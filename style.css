@@ -18,7 +18,6 @@ img {
 
 nav {
   display: flex;
-  gap: 0.5rem;
 }
 
 nav a {
@@ -32,13 +31,15 @@ nav a {
 }
 
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: 0.25em; 
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 0.25em;
   font-weight: 600;
 }
 
-nav a.hover {
-  background: oklch(90% 0.1 250);
+/* use the :hover pseudo-class so the style applies on mouse hover */
+nav a:hover {
+  /* subtle background tint using the accent color if supported */
+  background: oklch(90% 0.05 252.3);
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.25em;
   font-weight: 600;
