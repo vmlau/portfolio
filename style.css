@@ -18,14 +18,16 @@ nav {
 
 nav a {
   flex: 1;
-  text-align: center; 
-  padding: 0.5rem 0.75rem;
+  text-align: center;
+  padding: 0.5em;
   text-decoration: none;
   color: inherit;
-  border-radius: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid oklch(80% 3% 200);
 }
 
 nav a.current {
-  background: rgba(0,0,0,0.06);
+  border-bottom: 0.4em solid oklch(80% 3% 200);
+  padding-bottom: 0.25em; /* reduce bottom padding so border doesn't increase height */
   font-weight: 600;
 }
