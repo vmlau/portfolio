@@ -1,18 +1,31 @@
 body {
-  /* Set line height to 1.5 times the font size
-     and use the OS’s UI font as the website font
-   */
   font: 100%/1.5 system-ui;
-  /* Limit line length for readability and center the content. 100ch
-     is a good starting point (roughly 100 characters). Use ch so the
-     width scales with font size. */
   max-width: 100ch;
   margin-inline: auto;
-  padding: 1.25rem; /* gives breathing room on small viewports */
+  padding: 1.25rem; 
 }
 
 img {
   max-width: 50%;
   height: auto;
-  display: block; /* avoids descender gaps when centering */
+  display: block; 
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav a {
+  flex: 1;
+  text-align: center; 
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+}
+
+nav a.current {
+  background: rgba(0,0,0,0.06);
+  font-weight: 600;
 }
