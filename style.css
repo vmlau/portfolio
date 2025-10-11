@@ -120,9 +120,10 @@ h2 {
   text-decoration-color: oklch(80% 3% 200)
 }
 
-.resume-grid {
-  display: grid;
-  grid-template-columns: 1fr 28ch;
-  gap: 2rem;
-  align-items: start;
+.resume section {
+  border: 1px solid color-mix(in oklch, var(--color-accent) 12%, black 88%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: color-mix(in oklch, var(--color-accent) 2%, transparent);
 }
