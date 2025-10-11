@@ -122,3 +122,8 @@ h2 {
   margin-bottom: 1rem;
   background: color-mix(in oklch, var(--color-accent) 2%, transparent);
 }
+
+.resume section h2 {
+  text-decoration: underline;
+  text-decoration-color: oklch(80% 3% 200));
+}
