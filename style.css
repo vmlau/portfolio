@@ -121,7 +121,7 @@ h2 {
 }
 
 .resume section {
-  border: 1px solid color-mix(in oklch, var(--color-accent) 12%, black 88%);
+  border: 10px solid color-mix(in oklch, var(--color-accent) 12%, black 88%);
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
