@@ -10,9 +10,17 @@ body {
 }
 
 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
-  display: block; 
+  display: block;
+}
+
+/* Cheesecake only: keep that single image smaller */
+img.small {
+  max-width: 50%;
+  width: auto;
+  margin-inline: auto;
+  display: block;
 }
 
 nav {
