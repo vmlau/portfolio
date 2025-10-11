@@ -61,22 +61,18 @@ label {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em; /* space between article cards */
+  align-items: start;
 }
 
 .projects article {
-  grid-template-rows: subgrid;
-  grid-row: span 3;
+  display: grid;
+  grid-template-rows: subgrid; /* inherit the row track sizing from the parent (subgrid) */
+  grid-row: span 3; /* each article spans three rows */
   gap: 1em;
 }
 
-.projects img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.projects h2 {
+h2 {
   margin: 0;
 }
