@@ -61,7 +61,7 @@ label {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1em; /* space between article cards */
   align-items: start;
 }
