@@ -12,15 +12,7 @@ body {
 img {
   max-width: 50%;
   height: auto;
-  display: block;
-}
-
-/* cheesecake only: target the top-level image on the homepage and cap at 50% */
-body > img.small {
-  max-width: 50%;
-  width: auto;
-  height: auto;
-  display: block;
+  display: block; 
 }
 
 nav {
