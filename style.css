@@ -9,7 +9,7 @@ body {
   padding: 1.25rem; 
 }
 
-img img-small {
+. img-small {
   max-width: 50%;
   height: auto;
   display: block; 
