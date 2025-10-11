@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Contact Me</h1>
     <nav>
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
@@ -15,22 +14,17 @@
         <a href="https://github.com/vmlau">GitHub</a>
         <a href="../resume/index.html">Resume</a>
     </nav>
+    <h1>Contact Me</h1>
     <form action="mailto:vml.canada.2018@gmail.com" method="post" enctype="text/plain">
-        <label>
-            <span class="label-text">email:</span>
-            <input id="email" type="email" name="email">
+        <label for="email">email:
+        <input id="email" type="email" name="email">
         </label>
-
-        <label>
-            <span class="label-text">subject:</span>
-            <input id="subject" type="text" name="subject">
+        <label for="subject">subject:
+        <input id="subject" type="text" name="subject">
         </label>
-
-        <label>
-            <span class="label-text">body:</span>
-            <textarea id="body" name="body" rows="6"></textarea>
+        <label for="body">body:
+        <textarea id="body" name="body" rows="6"></textarea>
         </label>
-
         <button type="submit">Send</button>
     </form>
 </body>
