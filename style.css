@@ -125,5 +125,5 @@ h2 {
 
 .resume section h2 {
   text-decoration: underline;
-  text-decoration-color: oklch(80% 3% 200));
+  text-decoration-color: oklch(80% 3% 200);
 }
