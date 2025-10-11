@@ -64,12 +64,19 @@ label {
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
-article {
+.projects article {
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1em;
 }
 
-h2 {
+.projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.projects h2 {
   margin: 0;
 }
