@@ -71,12 +71,10 @@ label {
 }
 
 .projects img {
-  /* project images should be allowed to scale to their container width */
   max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
 }
 
 .projects h2 {
