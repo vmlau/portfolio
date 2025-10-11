@@ -69,34 +69,16 @@ label {
   gap: 0.25rem 0.75rem;
 }
 
-/* Controls should fill the right column */
 form input,
 form textarea {
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Submit spans both columns */
 form button {
   grid-column: 1 / -1;
   width: 100%;
-  padding: 0.75rem 1rem;
   justify-self: stretch;
-}
-
-/* Fallback for browsers without subgrid: make the label not create its own box so children are placed directly in the form grid.
-   Using display:contents keeps semantics but removes the extra wrapper box. */
-@supports not (grid-template-columns: subgrid) {
-  label {
-    display: contents;
-  }
-
-  /* When labels are display:contents, ensure the label text (span) is right-aligned */
-  form > span {
-    justify-self: end;
-    padding-right: 0.5rem;
-    align-self: center;
-  }
 }
 
 .projects {
