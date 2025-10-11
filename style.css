@@ -13,11 +13,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  img.small{
-    max-width: 50%;
-    height: auto;
-    display: block;
-  }
 }
 
 /* cheesecake only: target the top-level image on the homepage and cap at 50% */
@@ -26,7 +21,6 @@ body > img.small {
   width: auto;
   height: auto;
   display: block;
-  margin-inline: auto; /* center it */
 }
 
 nav {
@@ -75,16 +69,13 @@ label {
 
 .projects {
   display: grid;
-  /* increase min width so cards (and images) have room */
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
 .projects article {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 0.5rem;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
 }
 
 .projects img {
