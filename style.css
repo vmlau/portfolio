@@ -16,9 +16,11 @@ img {
 }
 
 img.small {
+  /* cheesecake only: cap at 50% of its container but allow it to shrink on small screens */
   max-width: 50%;
+  width: auto;
   height: auto;
-  display: block; 
+  display: block;
 }
 
 nav {
@@ -77,6 +79,8 @@ label {
 }
 
 .projects img {
+  /* project images should be allowed to scale to their container width */
+  max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
