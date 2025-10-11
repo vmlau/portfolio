@@ -119,3 +119,10 @@ h2 {
   text-decoration: underline;
   text-decoration-color: oklch(80% 3% 200)
 }
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 28ch;
+  gap: 2rem;
+  align-items: start;
+}
