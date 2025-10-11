@@ -114,3 +114,8 @@ h1 {
 h2 {
   margin: 0;
 }
+
+.resume h2 {
+  text-decoration: underline;
+  text-decoration-color: oklch(80% 3% 200)
+}
