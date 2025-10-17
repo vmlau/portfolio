@@ -1,5 +1,6 @@
 html {
     --color-accent: oklch(66.567% 0.14394 252.337);
+    color-scheme: light dark;
   }
 
 body {
@@ -23,6 +24,7 @@ img.small {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
 }
 
@@ -33,17 +35,17 @@ nav a {
   text-decoration: none;
   color: inherit;
   margin-bottom: 6px;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.25em;
   font-weight: 600;
 }
 
 nav a:hover {
-  background: oklch(90% 0.05 252.3);
+  background-color: color-mix(in oklch, oklch(90% 0.05 252.3), canvas 85%);
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.25em;
   font-weight: 600;
@@ -56,7 +58,7 @@ form {
   gap: 1em;
 }
 
-input, textarea, button {
+input, textarea, button, select {
   font: inherit;
 }
 
@@ -127,4 +129,13 @@ h2 {
   text-decoration: underline;
   text-decoration-color: oklch(80% 3% 200);
   text-align: center;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+  z-index: 100;
 }
