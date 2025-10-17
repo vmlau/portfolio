@@ -49,17 +49,36 @@ document.body.insertAdjacentHTML(
 	<label class="color-scheme">
 		Theme:
 		<select>
+            <option value="light dark">Automatic</option>
 			<option value="light">Light</option>
             <option value="dark">Dark</option>
-            <option value="light dark">Automatic</option>
 		</select>
 	</label>`,
 );
 
 const themeSelect = document.querySelector('.color-scheme select');
 if (themeSelect) {
+  if ("colorScheme" in localStorage) {
+    themeSelect.value = localStorage.colorScheme;
+    document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
+  }
   themeSelect.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
     document.documentElement.style.setProperty('color-scheme', event.target.value);
+    localStorage.colorScheme = event.target.value;
   });
 }
+
+const form = document.querySelector('form');
+form?.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const data = new FormData(form);
+  let params = [];
+  for (let [name, value] of data) {
+    params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+    console.log(name, encodeURIComponent(value));
+  }
+  const url = form.action + '?' + params.join('&');
+  location.href = url;
+});
