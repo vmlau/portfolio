@@ -26,8 +26,8 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  // Local server
-  : "/website/";         // GitHub Pages repo name
+  ? "/"                  
+  : "/website/";         
 for (let p of pages) {
   let url = p.url;
   url = !url.startsWith('http') ? BASE_PATH + url : url;
@@ -55,3 +55,11 @@ document.body.insertAdjacentHTML(
 		</select>
 	</label>`,
 );
+
+const themeSelect = document.querySelector('.color-scheme select');
+if (themeSelect) {
+  themeSelect.addEventListener('input', function (event) {
+    console.log('color scheme changed to', event.target.value);
+    document.documentElement.style.setProperty('color-scheme', event.target.value);
+  });
+}
