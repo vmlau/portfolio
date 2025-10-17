@@ -25,12 +25,14 @@ let pages = [
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  
-  : "/website/";         
+const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+const BASE_PATH = IS_LOCAL ? "/" : "/portfolio/"; // Use your repo name here
 for (let p of pages) {
   let url = p.url;
-  url = !url.startsWith('http') ? BASE_PATH + url : url;
+  // Use relative paths for internal links on GitHub Pages
+  if (!url.startsWith('http')) {
+    url = IS_LOCAL ? BASE_PATH + url : url;
+  }
   let title = p.title;
   let a = document.createElement('a');
   a.href = url;
