@@ -27,10 +27,12 @@ let nav = document.createElement('nav');
 document.body.prepend(nav);
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "https://vmlau.github.io/website/portfolio/";         
+  : "https://vmlau.github.io/portfolio/";         
 for (let p of pages) {
   let url = p.url;
-  url = !url.startsWith('http') ? BASE_PATH + url : url;
+  if (!url.startsWith('http')) {
+  url = BASE_PATH + url;
+}
   let title = p.title;
   let a = document.createElement('a');
   a.href = url;
