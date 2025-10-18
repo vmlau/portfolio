@@ -68,13 +68,12 @@ if (themeSelect) {
   }
   themeSelect.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
-    document.documentElement.style.setProperty('color-scheme', event.target.value);
-    localStorage.colorScheme = event.target.value;
-  });
+  const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
 }
 
-const form = document.querySelector('form');
-form?.addEventListener('submit', function(event) {
+    // Only prefix '/' for local development, use relative links for GitHub Pages
+    if (!url.startsWith('http') && IS_LOCAL) {
+      url = '/' + url;
   event.preventDefault();
 
   const data = new FormData(form);
