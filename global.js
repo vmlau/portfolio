@@ -25,10 +25,9 @@ let pages = [
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-/* const BASE_PATH = (location.hostname === "vmlau.github.io" || location.hostname === "127.0.0.1")
+const BASE_PATH = (location.hostname === "https://vmlau.github.io/" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "/portfolio/";   */
-let BASE_PATH = "/";       
+  : "/portfolio/";         
 for (let p of pages) {
   let url = p.url;
   if (!url.startsWith('http')) {
@@ -39,27 +38,14 @@ for (let p of pages) {
   a.href = url;
   a.textContent = title;
   nav.append(a);
-  if (!url.startsWith('http')) {
-    const currentPath = location.pathname;
-    const linkPath = BASE_PATH + (url === '' ? '' : url);
-    
-    // Handle home page special case
-    if (url === '' && (currentPath === '/' || currentPath === BASE_PATH || currentPath.endsWith('/portfolio/') || currentPath.endsWith('/index.html'))) {
-      a.classList.add('current');
-    }
-    // Handle other pages
-    else if (url !== '' && currentPath.includes(url)) {
-      a.classList.add('current');
-    }
-  }
-  /* if (a.host === location.host && a.pathname === location.pathname) {
+  if (a.host === location.host && a.pathname === location.pathname) {
     a.classList.add('current');
   }
   // Set target="_blank" for external links
   if (a.host !== location.host) {
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-  } */
+  }
 }
 document.body.insertAdjacentHTML(
   'afterbegin',
