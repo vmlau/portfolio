@@ -25,7 +25,7 @@ let pages = [
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-const BASE_PATH = (location.hostname === "https://vmlau.github.io/" || location.hostname === "127.0.0.1")
+const BASE_PATH = (location.hostname === "https://vmlau.github.io/portfolio/" || location.hostname === "127.0.0.1")
   ? "/"                  
   : "/portfolio/";         
 for (let p of pages) {
