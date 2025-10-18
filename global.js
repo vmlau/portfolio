@@ -25,13 +25,13 @@ let pages = [
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+const BASE_PATH = (location.hostname === "vmlau.github.io" || location.hostname === "127.0.0.1")
   ? "/"                  
   : "/portfolio/";         
 for (let p of pages) {
   let url = p.url;
   if (!url.startsWith('http')) {
-  url = BASE_PATH + url;
+    url = BASE_PATH + url;
 }
   let title = p.title;
   let a = document.createElement('a');
@@ -68,12 +68,13 @@ if (themeSelect) {
   }
   themeSelect.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
-  const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    document.documentElement.style.setProperty('color-scheme', event.target.value);
+    localStorage.colorScheme = event.target.value;
+  });
 }
 
-    // Only prefix '/' for local development, use relative links for GitHub Pages
-    if (!url.startsWith('http') && IS_LOCAL) {
-      url = '/' + url;
+const form = document.querySelector('form');
+form?.addEventListener('submit', function(event) {
   event.preventDefault();
 
   const data = new FormData(form);
