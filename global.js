@@ -25,9 +25,10 @@ let pages = [
 ];
 let nav = document.createElement('nav');
 document.body.prepend(nav);
-const BASE_PATH = (location.hostname === "vmlau.github.io" || location.hostname === "127.0.0.1")
+/* const BASE_PATH = (location.hostname === "vmlau.github.io" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "/portfolio/";         
+  : "/portfolio/";   */
+let BASE_PATH = "/";       
 for (let p of pages) {
   let url = p.url;
   if (!url.startsWith('http')) {
