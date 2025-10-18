@@ -39,14 +39,27 @@ for (let p of pages) {
   a.href = url;
   a.textContent = title;
   nav.append(a);
-  if (a.host === location.host && a.pathname === location.pathname) {
+  if (!url.startsWith('http')) {
+    const currentPath = location.pathname;
+    const linkPath = BASE_PATH + (url === '' ? '' : url);
+    
+    // Handle home page special case
+    if (url === '' && (currentPath === '/' || currentPath === BASE_PATH || currentPath.endsWith('/portfolio/') || currentPath.endsWith('/index.html'))) {
+      a.classList.add('current');
+    }
+    // Handle other pages
+    else if (url !== '' && currentPath.includes(url)) {
+      a.classList.add('current');
+    }
+  }
+  /* if (a.host === location.host && a.pathname === location.pathname) {
     a.classList.add('current');
   }
   // Set target="_blank" for external links
   if (a.host !== location.host) {
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-  }
+  } */
 }
 document.body.insertAdjacentHTML(
   'afterbegin',
