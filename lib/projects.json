@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Determining The Most Difficult Major at UCSD",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "This project set out to investigate a commonly held belief among college students: that STEM majors are objectively more difficult and time-consuming than humanities majors. Using the CAPEs dataset, a collection of student-reported experiences with UCSD courses, we attempted to quantify the demands of various departments across key metrics like study hours, grades and professor recommendations. In doing so, our analysis not only confirmed some long standing assumptions but also challenged others, offering a more nuanced picture of academic difficulty at UCSD."
+    },
+    {
+        "title": "Analyzing Recipe Calories vs Ratings",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "This data science project, conducted at UCSD for the DSC80: Practice and Application of Data Science Course, focuses on exploring factors that can and do contribute to a recipe's average rating."
+    },
+    {
+        "title": "Natural Disaster Project",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Used ERA5 data to study weather patterns that were correlated with storms in the Southeastern United States."
+    },
+    {
+        "title": "Voluptate distinctio quisquam accusamus.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Dolor cupiditate iste ullam reprehenderit aspernatur beatae porro magni, non, at enim hic ut! Numquam ratione, amet vel, natus voluptas nam quaerat ea atque nihil eum tempore beatae vero. Libero."
+    },
+    {
+        "title": "Nostrum temporibus officiis ratione.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Deserunt, eaque temporibus. Quisquam assumenda, laudantium blanditiis sed nam esse adipisci tempora eos repellat odit consequuntur, labore deleniti, at quae! Dolor nobis aspernatur id minus deserunt unde optio omnis ut?"
+    },
+    {
+        "title": "Earum autem tempore eos?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Laboriosam neque voluptatem iure est facere, inventore provident totam sit nemo illum reiciendis quam sunt officia itaque laborum aperiam odio maiores illo natus accusantium fuga quaerat pariatur. Voluptatum, cumque eveniet."
+    },
+    {
+        "title": "Earum hic ex cum.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Cum sit quos repellendus omnis natus error laborum harum molestias minima, placeat necessitatibus voluptates porro. Qui voluptatibus eaque voluptas ea cumque pariatur sequi. Dolorem iusto nulla, neque qui eius eos."
+    },
+    {
+        "title": "Ipsa adipisci vero inventore!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nobis, facilis? Quaerat voluptates debitis cumque, tempora perspiciatis ipsa nisi aut. Numquam doloremque voluptate debitis molestias eligendi sit magni provident quisquam, aliquam quae dolorum maiores tempore consequuntur suscipit est ratione?"
+    },
+    {
+        "title": "Eveniet repellendus sint quisquam?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Accusamus quisquam ullam nobis. Rerum sunt at dicta aspernatur. Error, iusto voluptas obcaecati laboriosam debitis veniam optio fugit provident aliquam beatae aspernatur explicabo odio qui hic ea laudantium itaque quos."
+    },
+    {
+        "title": "Et itaque autem deleniti.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Eos molestiae, a ut, suscipit aut culpa, itaque ea repellendus soluta nam fuga iste eum dolor placeat ullam fugit vitae! Nam, amet mollitia! Nobis odio incidunt in repellendus, rem deserunt?"
+    },
+    {
+        "title": "Cupiditate quisquam et laborum?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facere, sunt quasi. Id voluptatum laudantium nesciunt odio perferendis a magnam facere voluptatibus. Doloribus animi necessitatibus amet. Pariatur veniam accusantium vel sunt cum dolor, voluptates cupiditate error porro nesciunt hic!"
+    },
+    {
+        "title": "Sed distinctio velit maxime.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Reprehenderit cum repellendus modi ea aliquam qui doloremque ipsa et. Error, reprehenderit odit! Repellat reiciendis fugit veritatis eveniet perferendis blanditiis minus magni quasi tempore, esse aut consequatur consequuntur possimus repudiandae!"
+    }
+]
