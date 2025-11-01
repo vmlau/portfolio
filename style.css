@@ -158,3 +158,93 @@ h2 {
     margin: 0; 
     text-align: center;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+  /* make the svg a fixed-size flex item so legend can take remaining space */
+  flex: 0 0 20em;
+  width: 100%;
+  max-width: 20em;
+}
+
+.chart-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center; /* vertically center legend with chart */
+  flex-wrap: wrap; /* allow stacking on very narrow screens */
+  margin-block: 1rem;
+}
+
+.chart-row .legend {
+  flex: 1;       /* take remaining horizontal space */
+  min-width: 0; /* allow the legend to shrink inside flexbox */
+}
+
+.legend-item .swatch {
+  width: 20px;
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.legend-item > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  border: 2px solid rgb(182, 205, 247);
+  border-radius: 4px;
+  max-width: 500px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+/* layout for the projects page container (placed after the title) */
+.projects-title + .container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ensure children take full width */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects-title + .container .searchBar {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+/* selected wedge and legend styling */
+path.selected {
+  /* highlight color for selected wedge (distinct from palette) */
+  fill: oklch(53.59% 0.14583 140.778) !important;
+}
+
+.legend-item.selected .swatch {
+  background-color: oklch(53.59% 0.14583 140.778) !important;
+  box-shadow: 0 0 0 2px color-mix(in oklch, black 8%, transparent);
+}
