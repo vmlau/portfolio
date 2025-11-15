@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bikewatching",
+        "year": "2025",
+        "image": "../images/bikewatching.png",
+        "url": "https://vmlau.github.io/bikewatching/",
+        "description": "This Data Visualizations project explores bike usage patterns in the Boston area using data from the Bluebikes bike-sharing program. By analyzing trip data, station locations, and user demographics, the project aims to uncover insights into how and when people use bikes for transportation and recreation in the city."
+    },
+    {
         "title": "Determining The Most Difficult Major at UCSD",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
