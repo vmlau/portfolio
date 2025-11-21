@@ -14,12 +14,36 @@
     <script type="module" src="../global.js"></script>
     <script type="module" src="main.js"></script>
 
+    <div style="display:block;max-width: 100%;; align-items:baseline; gap:0.5rem; margin-bottom:1rem;">
+      <label for="commit-progress">Show commits until:
+        <input id="commit-progress" type="range" min="0" max="100" value="100">
+      </label>
+      <time id="commit-time" style="margin-left:auto"></time>
+    </div>
+
+    <dl id="files">
+      <!-- we want the following structure for each file:
+      <div>
+        <dt>
+          <code>{file.name}</code>
+        </dt>
+        <dd>{file.lines.length} lines</dd>
+      </div>
+      -->
+  </dl>
+
     <h2><strong>Summary</strong></h2>
     <div id="stats" class ='stats'></div>
 
-    <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrolly-1">
+      <div id="scatter-story">
+        <!-- narrative steps will be generated here -->
+      </div>
+      <div id="scatter-plot">
+        <h2>Commits by time of day</h2>
+        <div id="chart"></div>
 
+        
     <dl id="commit-tooltip" class="info tooltip" hidden>
       <dt>Commit</dt>
       <dd>
@@ -41,5 +65,9 @@
     </dl>
     <p id="selection-count">No commits selected</p>
     <dl id="language-breakdown" class="stats"></dl>
+      </div>
+    </div>
+
+    <dl id="files"></dl>
 </body>
 </html>
